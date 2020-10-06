@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MessengerIntro</string>
+    <string name="text">Manage all of your conversations in one place and use stickers and chat heads.
+                    SMS conversations are displayed separately in Messenger and are only available via a mobile phone.
+                    Standard text message charges will be charged.</string>
+    <string name="btn_ok">OK</string>
+    <string name="ok_click">ok button click~~~~~</string>
+
+    <string name="title">Send and receive SMS from Messenger</string>
+
+    <string name="btn_setting">Setting</string>
+</resources>
