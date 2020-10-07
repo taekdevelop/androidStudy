@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/bottomPadding"
+    tools:context=".MainActivity">
+
+    <!--
+    화면 하단에 버튼이 항상 보여야 한다.
+    따라서 스크롤 뷰를 활용해 위로 올라가게 만들어야 한다.
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--
+        딱 하나의 뷰만 추가 할 수 있다.
+        여럿을 묶으려면 Layout을 추가하면 됨.
+        이번엔 LinearLayout을 이용해 여러 화면을 구현할 것.
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/activityBtnStyle"
+                    android:src="@drawable/icon_close"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/writeActivity"/>
+
+                <ImageView
+                    style="@style/activityBtnStyle"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_ok"/>
+
+            </RelativeLayout>
+
+            <!--
+            구분선 처리도 뷰로 하면 된다.
+            -->
+            <View style="@style/divisionLine"/>
+
+            <!--
+            EditText
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!--
+                1. 가로에 0dp 줬다는 건 weight에 의해 나눠서 처리하겠다는 것.
+                2. inputType으로 text를 주면 문자열 입력 + 한 줄 입력이 한 번에 잡힌다.
+                -->
+                <EditText
+                    style="@style/titleInput"
+                    android:hint="제목"/>
+
+                <ImageView
+                    style="@style/activityBtnStyle"
+                    android:src="@drawable/icon_layer"/>
+
+            </LinearLayout>
+
+            <View style="@style/divisionLine"/>
+
+            <!--
+            오른쪽에 이미지 추가할 수 있으니 LinearLayout을 하나 추가해놓음.
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    style="@style/titleInput"
+                    android:hint="소제목"/>
+
+            </LinearLayout>
+
+            <View style="@style/divisionLine"/>
+
+            <!--
+            여러 줄 입력하려면 inputType을 textMultiLine으로 지정하면 된다.
+            -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="top"
+                android:hint="내용을 입력하세요"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    스크롤 뷰를 이용해 묶으면 전체 스크롤링이 된다.
+    밑에는 화면 하단에 항상 나오도록 하는 내용을 넣을 것.
+    -->
+
+    <View style="@style/divisionLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/activityBtnStyle"
+            android:src="@drawable/icon_photo"/>
+
+        <ImageView
+            style="@style/activityBtnStyle"
+            android:layout_marginLeft="@dimen/btnMarginLeft"
+            android:src="@drawable/icon_align"/>
+
+        <ImageView
+            style="@style/activityBtnStyle"
+            android:layout_marginLeft="@dimen/btnMarginLeft"
+            android:src="@drawable/icon_color"/>
+
+    </LinearLayout>
+</LinearLayout>

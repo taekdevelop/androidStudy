@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottomPadding">16dp</dimen>
+    <dimen name="activityBtnHeightWidth">30dp</dimen>
+    <dimen name="btnMarginLeft">16dp</dimen>
+</resources>

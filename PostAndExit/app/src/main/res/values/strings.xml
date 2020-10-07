@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PostAndExit</string>
+
+    <string name="writeActivity">글쓰기</string>
+
+    <string name="title">제목</string>
+    <string name="subTitle">소제목</string>
+    <string name="content">내용을 입력하세요.</string>
+
+    <string name="backMessage">작성중인 내용을 저장하지 않고 나가시겠습니까?</string>
+    <string name="backPositiveMessage">확인</string>
+    <string name="backNegativeMessage">취소</string>
+</resources>
