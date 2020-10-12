@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/AppNameBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_person_large"/>
+
+            <LinearLayout
+                style="@style/ImageEditHorizonLayout"
+                >
+                <ImageView
+                    style="@style/ImageContent"
+                    android:src="@drawable/icon_person_small"/>
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/EditContent"
+                    android:inputType="text"
+                    android:hint="이름"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ImageEditHorizonLayout"
+                >
+                <ImageView
+                    style="@style/ImageContent"
+                    android:src="@drawable/icon_phone"/>
+                <EditText
+                    android:id="@+id/edit_phone"
+                    style="@style/EditContent"
+                    android:inputType="phone"
+                    android:hint="전화"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ImageEditHorizonLayout"
+                >
+                <ImageView
+                    style="@style/ImageContent"
+                    android:src="@drawable/icon_email"/>
+                <EditText
+                    android:id="@+id/edit_email"
+                    style="@style/EditContent"
+                    android:inputType="textEmailAddress"
+                    android:hint="이메일"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_sqlite"
+            style="@style/ButtonStyle"
+            android:layout_alignParentLeft="true"
+            android:text="ADD_SQLITE"
+            />
+        <Button
+            android:id="@+id/btn_realm"
+            style="@style/ButtonStyle"
+            android:layout_centerInParent="true"
+            android:text="ADD_REALM"
+            />
+        <Button
+            android:id="@+id/btn_file"
+            style="@style/ButtonStyle"
+            android:layout_alignParentRight="true"
+            android:text="ADD_FILE"
+            />
+    </RelativeLayout>
+</LinearLayout>

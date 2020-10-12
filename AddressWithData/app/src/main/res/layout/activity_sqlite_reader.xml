@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SqliteReader">
+
+    <TextView
+        style="@style/AppNameBar"/>
+
+    <LinearLayout
+        style="@style/ResultLayout"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ResultTitle"/>
+
+        <LinearLayout
+            style="@style/ResultLayout">
+
+            <TextView
+                style="@style/ResultName"/>
+
+            <TextView
+                android:id="@+id/text_sqlite_result"
+                style="@style/ResultValue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ResultLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ResultPhone"/>
+
+            <TextView
+                android:id="@+id/text_sqlite_phone"
+                style="@style/ResultValue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ResultLayout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ResultEmail"/>
+
+            <TextView
+                android:id="@+id/text_sqlite_email"
+                style="@style/ResultValue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

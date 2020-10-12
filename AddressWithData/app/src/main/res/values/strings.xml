@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AddressWithData</string>
+
+    <string name="fileName">myFiles.txt</string>
+
+    <string name="tableName">testDB</string>
+</resources>
