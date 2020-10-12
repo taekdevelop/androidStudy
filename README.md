@@ -3,3 +3,4 @@
 #### 20/10/06 Part2 1번 도전과제 : MessengerIntro
 #### 20/10/07 Part2 2번 도전과제 : PostAndExit
 #### 20/10/07 Part2 3번 도전과제 : AddressActivity
+#### 20/10/12 Part3 도전과제     : AddressWithData
